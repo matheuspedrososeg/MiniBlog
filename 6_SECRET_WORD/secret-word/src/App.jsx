@@ -130,7 +130,6 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>Oi</h1>
         {gameStage === "start" && <StartScreen startGame={startGame} />}
         {gameStage === "game" && (
           <Game
