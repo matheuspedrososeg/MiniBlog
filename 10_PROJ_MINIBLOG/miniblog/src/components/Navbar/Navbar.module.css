@@ -1,0 +1,102 @@
+/* Navbar container */
+
+*{
+  /* border:1px solid red; */
+}
+.navbar {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+}
+
+/* Brand styling */
+.brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.brand span {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #007bff;
+}
+
+/* Navigation links list */
+.links_list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation link items */
+.links_list li {
+  margin-right: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links_list li:last-child {
+  margin-right: 0;
+}
+
+/* Navigation links */
+.links_list li a{
+  padding: 0.6em 1em;
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.links_list li a:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Active link */
+.active {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.btn {
+  display: inline-block; /* Para que o botão se comporte como um link */
+ 
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: transparent; /* Remove o fundo padrão do botão */
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 70px;
+  padding: 0.6em 1em;
+  border-radius: 4px;
+  
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: #fff;
+
+}
+
+.btn:focus {
+  outline: none; /* Remove o contorno ao focar */
+}

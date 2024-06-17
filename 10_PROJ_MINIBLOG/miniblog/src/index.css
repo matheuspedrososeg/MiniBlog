@@ -1,0 +1,215 @@
+/* Global Styles */
+:root {
+  --background-color-light: #f9f9f9;
+  --text-color-dark: #242424;
+  --text-color-light: #fff;
+  --primary-color: #007bff;
+  --danger-color: #dc3545;
+  --error-bg: #f8d7da;
+  --error-border: #f5c6cb;
+  --error-text: #721c24;
+  --btn-bg-dark: #000;
+  --btn-bg-success: #1a8918;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #aaa;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Links and Buttons */
+a,
+nav button {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color-light);
+  font-size: 1em;
+  cursor: pointer;
+  transition: color 0.2s;
+  font-family: "Montserrat", sans-serif;
+}
+
+a:hover,
+nav button:hover {
+  color: #bbb;
+}
+
+/* Light Theme Adjustments */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-dark);
+  }
+
+  button {
+    background-color: var(--background-color-light);
+  }
+
+  a,
+  nav button {
+    color: var(--text-color-dark);
+  }
+
+  a:hover,
+  nav button:hover {
+    color: #555;
+  }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #343a40;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+}
+
+/* Brand */
+.brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--text-color-light);
+}
+
+.brand span {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+/* Navigation Links */
+.links_list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links_list li {
+  margin-right: 1.5em;
+}
+
+.links_list li:last-child {
+  margin-right: 0;
+}
+
+.links_list li a {
+  padding: 0.6em 1em;
+  color: var(--text-color-light);
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+
+.links_list li a:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+}
+
+/* Form Styles */
+form {
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+label span {
+  margin-bottom: 0.3em;
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--text-color-dark);
+  padding: 0.8em 0;
+  background-color: transparent;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  background-color: var(--btn-bg-success);
+  color: var(--text-color-light);
+  text-align: center;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn.btn-dark {
+  background-color: var(--btn-bg-dark);
+  border-radius: 0;
+}
+
+.btn.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--btn-bg-dark);
+  color: var(--btn-bg-dark);
+  padding: 7px 30px;
+  border-radius: 0;
+}
+
+.btn.btn-outline:hover {
+  background-color: var(--btn-bg-dark);
+  color: var(--text-color-light);
+}
+
+.btn.btn-danger:hover {
+  background-color: var(--danger-color);
+}
+
+button[disabled] {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Error Styles */
+.container .error {
+  color: var(--error-text);
+  background-color: var(--error-bg);
+  border: 1px solid var(--error-border);
+  padding: 5px;
+  border-radius: 5px;
+}

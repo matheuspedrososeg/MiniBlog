@@ -1,0 +1,30 @@
+/* Estilização da Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.active {
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+}

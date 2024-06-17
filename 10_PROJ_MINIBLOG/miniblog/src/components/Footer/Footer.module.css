@@ -1,0 +1,74 @@
+.footer {
+  height: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  color: #242424;
+  padding: 1.7em 2em;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px -4px 12px;
+  overflow: hidden;
+  position: fixed; /* Fixa o footer na parte inferior da janela */
+}
+
+/* Estilos para o conteúdo dentro do footer (exemplo) */
+.footer p {
+  margin: 0.5em 0;
+  margin-bottom: 1.5em;
+  padding-top: 0.5em;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #0056b3;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.footer .social-icons a {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #007bff;
+}
+
+@media (prefers-color-scheme: light) {
+  .footer {
+    background-color: #f9f9f9;
+    color: #242424;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -4px 12px;
+  }
+
+  .footer a {
+    color: #007bff;
+  }
+
+  .footer a:hover {
+    color: #0056b3;
+  }
+
+  .footer .social-icons a {
+    color: #242424;
+  }
+
+  .footer .social-icons a:hover {
+    color: #007bff;
+  }
+}
