@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .search_form{
@@ -11,6 +12,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 2em;
+    margin-top: 1em;
 }
 
 .search_form input {

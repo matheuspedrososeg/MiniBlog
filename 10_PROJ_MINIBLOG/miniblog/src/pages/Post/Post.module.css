@@ -1,0 +1,36 @@
+.post_container{
+    display: block;
+    text-align: center;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.post_container img {
+    width: 100%;
+    max-width: 600px; 
+}
+
+
+.post_container h3 {
+    margin-bottom: .2em;
+}
+
+.post_container .tags{
+    display: flex;
+}
+
+
+.tags span{
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .post_container img {
+        width: 100%;
+        max-width: none; 
+    }
+
+    .tags p {
+        margin-right: 0.5em; 
+    }
+}

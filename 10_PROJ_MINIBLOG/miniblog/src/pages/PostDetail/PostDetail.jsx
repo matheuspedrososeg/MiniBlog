@@ -5,10 +5,12 @@ import styles from "./PostDetail.module.css";
 const PostDetail = ({ post }) => {
   return (
     <div className={styles.post_detail}>
-      <img src={post.image} alt={post.title} />
+      <Link to={`/posts/${post.id}`}>
+      <img src={post.image} alt={post.title}  />
+      </Link>
       <h2>{post.title}</h2>
       <p className={styles.createdby}>por: {post.createdBy}</p>
-      <div className={styles.tags}>
+      <div className="tags">
         {post.tagsArray.map((tag) => (
           <p key={tag}>
             <span>#</span>
@@ -16,9 +18,11 @@ const PostDetail = ({ post }) => {
           </p>
         ))}
       </div>
+      <div class="btn_container">
       <Link to={`/posts/${post.id}`} className="btn btn-outline">
         Ler
       </Link>
+      </div>
     </div>
   );
 };

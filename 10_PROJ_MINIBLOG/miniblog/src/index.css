@@ -172,10 +172,15 @@ textarea {
   width: 120px;
   font-weight: bold;
   border: none;
-  padding: 10px 15px;
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s;
+  padding: 7px 30px;
+}
+
+.btn_container{
+  justify-content: center;
+  display: flex;
 }
 
 .btn.btn-dark {
@@ -187,7 +192,6 @@ textarea {
   background-color: transparent;
   border: 1px solid var(--btn-bg-dark);
   color: var(--btn-bg-dark);
-  padding: 7px 30px;
   border-radius: 0;
 }
 
@@ -212,4 +216,14 @@ button[disabled] {
   border: 1px solid var(--error-border);
   padding: 5px;
   border-radius: 5px;
+}
+
+.tags{
+  display: flex;
+  justify-content: center;
+}
+
+.tags p{
+  margin-right: 1em;
+  margin-left: 1em;
 }
