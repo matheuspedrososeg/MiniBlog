@@ -25,7 +25,7 @@ const userCreateValidation = () => {
       .withMessage("A senha precisa ter pelo menos um número.")
       .matches(/[\W_]/)
       .withMessage("A senha precisa ter pelo menos um caractere especial."),
-    body("confirmpassword")
+    body("confirmPassword")
       .isString()
       .withMessage("A confirmação de senha é obrigatória.")
       .custom((value, { req }) => {
