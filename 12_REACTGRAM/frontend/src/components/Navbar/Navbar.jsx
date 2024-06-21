@@ -9,14 +9,14 @@ import {
   BsFillCameraFill,
 } from "react-icons/bs";
 
-Hooks
+//Hooks
 import { useState } from "react";
-import { useAuth } from "../hooks/useAuth";
+import useAuth from "../../hooks/useAuth";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 // Redux
-import { logout, reset } from "../slices/authSlice";
+import { logout, reset } from "../../slices/authSlice";
 
 const Navbar = () => {
   const { auth } = useAuth();
@@ -57,7 +57,7 @@ const Navbar = () => {
         />
       </form> */}
       <ul id="nav-links">
-        {auth ? ( 
+        {auth ? (
           <>
             <li>
               <NavLink to="/">
@@ -76,20 +76,20 @@ const Navbar = () => {
                 <BsFillPersonFill />
               </NavLink>
             </li>
-           <li>
+            <li>
               <span onClick={handleLogout}>Sair</span>
-            </li> 
+            </li>
           </>
         ) : (
-        <>
-          {" "}
-          <li>
-            <NavLink to="/login">Entrar</NavLink>
-          </li>
-          <li>
-            <NavLink to="/register">Cadastrar</NavLink>
-          </li>
-        </>
+          <>
+            <li>
+              <NavLink to="/login">Entrar</NavLink>
+            </li>
+            <li>
+              <NavLink to="/register">Cadastrar</NavLink>
+            </li>
+          </>
+        )}
       </ul>
     </nav>
   );

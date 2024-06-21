@@ -20,6 +20,11 @@ ul {
   list-style: none;
 }
 
+li#nav-links > svg{
+  height: 50%;
+  width: 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;
