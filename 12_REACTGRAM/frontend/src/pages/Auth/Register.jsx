@@ -31,7 +31,6 @@ const Register = () => {
       confirmPassword,
     };
 
-    console.log(user);
     dispath(register(user));
   };
 
@@ -73,9 +72,9 @@ const Register = () => {
         {loading && <input type="submit" value="Aguarde..." disabled />}
         {error && <Message msg={error} type="error" />}
       </form>
-      <p>
+      {/* <p>
         Já possui uma conta? <Link to="/login">Clique aqui</Link>
-      </p>
+      </p> */}
     </div>
   );
 };

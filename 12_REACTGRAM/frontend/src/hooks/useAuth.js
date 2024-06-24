@@ -18,8 +18,6 @@ export const useAuth = () => {
       setAuth(false);
     }
     
-    await new Promise((resolve) => setTimeout(resolve, 5000))
-
     setLoading(false);
   }
   

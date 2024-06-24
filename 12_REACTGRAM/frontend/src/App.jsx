@@ -16,10 +16,13 @@ import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
 import Loading from "./components/Loading/Loading";
 import EditProfile from "./pages/EditProfile/EditProfile";
+import Profile from "./pages/Profile/Profile";
+import Photo from "./pages/Photo/Photo";
 
 function App() {
   const { auth, loading } = useAuth();
 
+  console.log;
   if (loading) {
     return (
       <>
@@ -43,12 +46,20 @@ function App() {
               element={auth ? <EditProfile /> : <Navigate to="/login" />}
             />
             <Route
+              path="/users/:id"
+              element={auth ? <Profile /> : <Navigate to="/login" />}
+            />
+            <Route
               path="/login"
               element={!auth ? <Login /> : <Navigate to="/login" />}
             />
             <Route
               path="/register"
-              element={auth ? <Register /> : <Navigate to="/login" />}
+              element={!auth ? <Register /> : <Navigate to="/login" />}
+            />
+            <Route
+              path="/photos/:id"
+              element={auth ? <Photo /> : <Navigate to="/login" />}
             />
           </Routes>
         </div>

@@ -1,4 +1,5 @@
 import { api, requestConfig } from "../utils/config";
+import axios from 'axios'
 
 // Register a user
 const register = async (data) => {
@@ -27,11 +28,8 @@ const login = async (data) => {
   const config = requestConfig("POST", data);
 
   try {
-    const res = await fetch(api + "/users/login", config)
-      .then((res) => res.json())
-      .catch((err) => err);
+    const {data: res} = await axios.post(api + "/users/login", data)
 
-    console.log(JSON.stringify(res))
     if (res._id) {
       localStorage.setItem("user", JSON.stringify(res));
     }
