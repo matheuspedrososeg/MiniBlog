@@ -38,6 +38,10 @@
   width: 24px; /* Ajuste o tamanho dos ícones */
   height: 24px;
 }
+#search-form svg{
+  width: 24px; /* Ajuste o tamanho dos ícones */
+  height: 24px;
+}
 
 
 #nav-links li a {

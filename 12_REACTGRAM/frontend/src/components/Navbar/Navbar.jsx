@@ -26,7 +26,7 @@ const Navbar = () => {
 
   const dispatch = useDispatch();
 
-  // const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("");
 
   const handleLogout = () => {
     dispatch(logout());
@@ -35,27 +35,27 @@ const Navbar = () => {
     navigate("/login");
   };
 
-  // const handleSearch = (e) => {
-  //   e.preventDefault();
+  const handleSearch = (e) => {
+    e.preventDefault();
 
-  //   if (query) {
-  //     return navigate(`/search?q=${query}`);
-  //   }
-  // };
+    if (query) {
+      return navigate(`/search?q=${query}`);
+    }
+  };
 
   return (
     <nav id="nav">
       <Link to="/">
         <h2>ReactGram</h2>
       </Link>
-      {/* <form id="search-form" onSubmit={handleSearch}>
+      <form id="search-form" onSubmit={handleSearch}>
         <BsSearch />
         <input
           type="text"
           placeholder="Pesquisar"
           onChange={(e) => setQuery(e.target.value)}
         />
-      </form> */}
+      </form>
       <ul id="nav-links">
         {auth ? (
           <>
