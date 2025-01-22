@@ -49,6 +49,7 @@
 /* Navigation links */
 .links_list li a{
   padding: 0.6em 1em;
+  user-select: none;
   text-decoration: none;
   color: #333;
   font-size: 1em;

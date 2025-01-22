@@ -30,6 +30,11 @@
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.341);
 }
 
+.post_img {
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.338);
+    border-radius: 8px;
+}
+
 .post_container h3 {
     margin-bottom: .2em;
     margin-top: 20px;
@@ -44,7 +49,7 @@
 }
 
 .tags{
-    max-width: fit-content;
+    width: fit-content;
     margin: auto;
     display: flex;
     justify-content: center;

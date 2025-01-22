@@ -185,6 +185,7 @@ textarea {
 
 .btn.btn-dark {
   background-color: var(--btn-bg-dark);
+  padding: 1px;
   border-radius: 0;
 }
 

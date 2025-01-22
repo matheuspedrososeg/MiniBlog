@@ -90,6 +90,7 @@ const CreatePost = () => {
           <textarea
             name="body"
             required
+            minLength={300}
             placeholder="Insira o conteúdo do post"
             onChange={(e) => setBody(e.target.value)}
             value={body}

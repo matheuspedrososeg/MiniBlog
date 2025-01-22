@@ -10,7 +10,7 @@ const About = () => {
       <p>
         Este projeto consiste em um blog feito com React no front-end e Firebase no back-end.
       </p>
-      <Link to="/posts/create" className="btn">Criar post</Link>
+      <Link to="/posts/create" className="btn anchor">Criar post</Link>
     </div>
   )
 }
