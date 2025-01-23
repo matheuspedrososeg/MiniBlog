@@ -8,15 +8,28 @@
 
 .about p{
     color: #000000;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .about a{
     display: block;
-    margin-top: 15px;
     padding: 10px 15px;
 }
+.about .credits {
+    display: flex;
+}
+.about .credits p {
+    justify-content: center;
+    margin-right: 2em;
+}
 
-.about anchor:hover {
-    
+.about .anchor {
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid;
+}
+
+.about .anchor:hover {
+    background-color: black;
+    color: #fff;
 }

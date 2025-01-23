@@ -25,9 +25,6 @@ const Home = () => {
       return navigate(`/search?q=${query}`);
     }
   };
-
-  console.log(loading);
-
   return (
     <div className={styles.home}>
       <h1>Veja os nossos posts mais recentes</h1>

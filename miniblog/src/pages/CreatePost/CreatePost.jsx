@@ -109,7 +109,7 @@ const CreatePost = () => {
           />
         </label>
         {!response.loading && (
-          <button type="submit" className="btn">
+          <button type="submit" className={styles.anchor}>
             Criar post
           </button>
         )}
